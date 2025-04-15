@@ -304,10 +304,11 @@ function reveal() {
   }
   
   var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "https://www.youtube.com/embed/N46lnWNBig8?controls=0&loop=1&autoplay=1");
+        ifrm.setAttribute("src", "https://www.youtube.com/embed/MjF1bG5LUcs?controls=0&loop=1&autoplay=1");
         //ifrm.style.width = `${w}px`;
         //ifrm.style.height = `${h}px`;
         ifrm.style.border = 'none';
         document.querySelector('#video').appendChild(ifrm);
 }
-{/* <iframe width="693" height="390" src="https://www.youtube.com/embed/N46lnWNBig8" title="WHY SOME LADIES ARE STILL SINGLE 😂#trending #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+{/* <iframe width="693" height="390" src="https://www.youtube.com/embed/N46lnWNBig8" title="#trending #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+// <iframe width="315" height="510" src="https://www.youtube.com/embed/OkonKzOV74I" title="#memes #women #bigbrain #foryou #spiderman #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
