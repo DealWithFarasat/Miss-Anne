@@ -1,5 +1,6 @@
 /* Kaushan+Script, oregano, sail */
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 html,
 body,
@@ -531,6 +532,27 @@ div#sea {
     height: 150px;
     margin-left: -110px;
   }
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background: #1d1d1dab;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-family: "Source Code Pro", monospace;
 }
 
 /* Mobile devices */
