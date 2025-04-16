@@ -290,25 +290,42 @@ window.onload=function(){
  
 }
 
+// Update the reveal function to be more responsive
 function reveal() {
-  document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
+	document.querySelector(".merrywrap").style.backgroundColor = "transparent"
   
-  loop();
+	loop()
   
-  var w, h;
-  if(window.innerWidth >= 1000) {
-    w = 295; h = 185;
+	var ifrm = document.createElement("iframe")
+	ifrm.setAttribute("src", "https://www.youtube.com/embed/MjF1bG5LUcs?controls=0&loop=1&autoplay=1")
+	ifrm.style.border = "none"
+  
+	// Make iframe responsive
+	if (window.innerWidth >= 1000) {
+	  ifrm.style.width = "295px"
+	  ifrm.style.height = "185px"
+	} else if (window.innerWidth >= 768) {
+	  ifrm.style.width = "220px"
+	  ifrm.style.height = "140px"
+	} else if (window.innerWidth >= 480) {
+	  ifrm.style.width = "180px"
+	  ifrm.style.height = "120px"
+	} else {
+	  ifrm.style.width = "150px"
+	  ifrm.style.height = "100px"
+	}
+  
+	document.querySelector("#video").appendChild(ifrm)
   }
-  else {
-    w = 255; h = 155;
-  }
   
-  var ifrm = document.createElement("iframe");
-        ifrm.setAttribute("src", "https://www.youtube.com/embed/MjF1bG5LUcs?controls=0&loop=1&autoplay=1");
-        //ifrm.style.width = `${w}px`;
-        //ifrm.style.height = `${h}px`;
-        ifrm.style.border = 'none';
-        document.querySelector('#video').appendChild(ifrm);
-}
-{/* <iframe width="693" height="390" src="https://www.youtube.com/embed/N46lnWNBig8" title="#trending #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+  // Add window resize event to handle canvas resizing
+  window.addEventListener("resize", () => {
+	// Update canvas dimensions
+	cw = window.innerWidth
+	ch = window.innerHeight
+	canvas.width = cw
+	canvas.height = ch
+  })
+  
+/* <iframe width="693" height="390" src="https://www.youtube.com/embed/N46lnWNBig8" title="#trending #comedy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */
 // <iframe width="315" height="510" src="https://www.youtube.com/embed/OkonKzOV74I" title="#memes #women #bigbrain #foryou #spiderman #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
